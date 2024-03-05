@@ -42,28 +42,38 @@ nav ul li a {
 
 main {
     color: whitesmoke;
-    height: 100vh;
-    width: 100%;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,9,121,0.6250875350140056) 48%, rgb(37, 11, 14) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,9,121,0.6250875350140056) 48%, rgb(37, 11, 14) 100%); 
 }
 
 .sec-container {
-    
+
 }
 
 .container {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin: 25px;
+}
+
+.img-container {
+    height: 70vh;
+    width: 30%;
 }
 
 .button-explore {
     color: whitesmoke;
     background: none;
     width: 80px;
+
 }
 
 .container-content p {
 
-    font-size: 10px
+    font-size: 30pxpx
 }
 
