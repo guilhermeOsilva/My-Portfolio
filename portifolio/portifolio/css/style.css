@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
-    font-style: normal;  
+    font-style: normal;
     text-decoration: none;
 }
 
@@ -19,15 +19,15 @@ nav {
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     position: fixed;
-    width:300px;
+    width: 300px;
     border-radius: 2px;
     justify-content: center;
-    
+
 
 }
 
 .div-nav {
-    
+
     display: flex;
     justify-content: center;
 }
@@ -42,13 +42,16 @@ nav ul li a {
 
 main {
     color: whitesmoke;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,9,121,0.6250875350140056) 48%, rgb(37, 11, 14) 100%); 
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(24, 9, 121, 0.6250875350140056) 48%, rgb(37, 11, 14) 100%);
 }
 
-.sec-container {
-
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(24, 9, 121, 0.6250875350140056) 48%, rgb(37, 11, 14) 100%);
 }
+
+
 
 .container {
     display: flex;
@@ -74,6 +77,43 @@ main {
 
 .container-content p {
 
-    font-size: 30pxpx
+    font-size: 20px;
+    margin-bottom: 100px;
 }
 
+.container-content h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+
+.card {
+    height: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25rem;
+    height: 100px;
+}
+
+.card img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.card:hover {
+    transform: scale(1.1);
+   
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
