@@ -26,7 +26,7 @@ nav {
 }
 
 .img-banner {
-    width:100vh;
+    width:150vh;
     border: 10px solid black;
     padding: 20px;
     display: flex;
@@ -34,7 +34,7 @@ nav {
 }
 
 .img-banner ul li {
-    font-size: 15px;
+    font-size: 30px;
     margin: 10px;
 }
 .div-nav {
