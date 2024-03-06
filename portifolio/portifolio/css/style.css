@@ -26,21 +26,64 @@ nav {
 }
 
 .img-banner {
+    
     width:150vh;
-    border: 10px solid black;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.676);
+    border-radius: 10px;
+}
+
+.img-container {
+    height: 70vh;
+    width: 69vh;
+    border-radius: 10px;
 }
 
 .img-banner ul li {
-    font-size: 30px;
+    list-style: none;
+    font-size: 20px;
     margin: 10px;
 }
+
+.img-banner ul li a {
+    color: white;
+}
+.img-banner ul li a:hover {
+    color: aqua
+}
+.list-n-btn {
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.list-n-btn button {
+    width: 70%;
+    height: 50px;
+    margin-top: 40px;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.677);
+    box-shadow: 10px 10 px 0px 0px black;
+
+}
+
 .div-nav {
     display: flex;
     justify-content: center;
 }
+
+.container video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+  }
 
 nav ul li {
     display: inline-block;
@@ -63,7 +106,6 @@ body {
 
 
 .container {
-    border: 10px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,10 +115,7 @@ body {
     margin-top: 75px;
 }
 
-.img-container {
-    height: 70vh;
-    width: 70rvh;
-}
+
 
 .container-content {
     display: flex;
@@ -145,9 +184,29 @@ body {
     height: 100px;
 }
 
+.img-container-tech-code {
+    height: 50vh;
+    width: 90vh;
+}
+
 .img-tech-code {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.container-dynamics {
+    background: rgba(0, 0, 0, 0.676);
+   padding: 10px;
+}
+
+.container-node {
+    background: rgba(0, 0, 0, 0.676);
+   padding: 10px;
+}
+
+.container-csharp {
+    background: rgba(0, 0, 0, 0.676);
+   padding: 10px;
 }
