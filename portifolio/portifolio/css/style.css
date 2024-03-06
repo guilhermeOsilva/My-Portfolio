@@ -15,19 +15,29 @@ header {
 }
 
 nav {
+    height: 40px;
     color: whitesmoke;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.623);
     display: flex;
     position: fixed;
-    width: 300px;
+    width: 400px;
     border-radius: 2px;
     justify-content: center;
-
-
 }
 
-.div-nav {
+.img-banner {
+    width:100vh;
+    border: 10px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.img-banner ul li {
+    font-size: 15px;
+    margin: 10px;
+}
+.div-nav {
     display: flex;
     justify-content: center;
 }
@@ -52,33 +62,36 @@ body {
 }
 
 
-
 .container {
+    border: 10px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .container h1 {
-    margin: 25px;
+    margin-top: 75px;
 }
 
 .img-container {
     height: 70vh;
-    width: 30%;
+    width: 70rvh;
 }
 
-.button-explore {
-    color: whitesmoke;
-    background: none;
-    width: 80px;
-
+.container-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .container-content p {
 
     font-size: 20px;
     margin-bottom: 100px;
+    padding: auto;
 }
 
 .container-content h2 {
@@ -90,8 +103,9 @@ body {
 .cards {
     margin-top: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 70vh;
+    
 }
 
 
@@ -106,6 +120,15 @@ body {
 .card img {
     width: 25rem;
     height: 25rem;
+    border-radius: 10px;
+}
+
+.container-card-info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .card:hover {
@@ -116,4 +139,15 @@ body {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
+}
+
+.space-in-between-div{
+    height: 100px;
+}
+
+.img-tech-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
