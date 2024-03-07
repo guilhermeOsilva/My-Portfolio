@@ -38,6 +38,19 @@ nav {
     z-index: 1;
 }
 
+.div-nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+}
+
 .img-banner {
     margin-top: 50px;
     width: 150vh;
@@ -95,11 +108,6 @@ nav {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(40, 7, 251, 0.436) 84%, rgba(255, 0, 25, 0.093) 100%);
 }
 
-.div-nav {
-    display: flex;
-    justify-content: center;
-}
-
 .container video {
     position: fixed;
     top: 0;
@@ -109,17 +117,6 @@ nav {
     z-index: -1;
 }
 
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: white;
-}
-
-
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -128,9 +125,8 @@ nav ul li a {
 
 .container h1 {
     margin-top: 75px;
+    margin-bottom: 10px;
 }
-
-
 
 .container-content {
     display: flex;
@@ -139,6 +135,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    letter-spacing: .3rem;
 }
 
 .container-content p {
@@ -155,20 +152,15 @@ nav ul li a {
 }
 
 .cards {
-    border: 10px solid black;
     margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
     height: 70vh;
-
 }
 
-
 .card {
-   
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     height: 8px;
     transition: 0.3s;
     width: 25rem;
@@ -179,7 +171,6 @@ nav ul li a {
     width: 25rem;
     height: 20rem;
     border-radius: 10px;
-
 }
 
 .container-card-info {
@@ -195,18 +186,11 @@ nav ul li a {
 
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-
-}
-
 .space-in-between-div {
     height: 100px;
 }
 
 .img-container-tech-code {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(24, 9, 121, 0.6250875350140056) 48%, rgb(37, 11, 14) 100%);
     height: 40vh;
     width: 90vh;
 }
@@ -219,17 +203,29 @@ nav ul li a {
 }
 
 .container-dynamics {
-    background: rgba(0, 0, 0, 0.676);
+    background: rgba(2, 1, 31, 0.13);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(40, 7, 251, 0.21) 84%, rgba(255, 0, 25, 0.093) 100%);
     padding: 10px;
 }
 
+.img-dynamics {
+    display: flex;
+    justify-content: center;
+}
+
+.dynamics-screen {
+    height: 60vh;
+}
+
 .container-node {
-    background: rgba(0, 0, 0, 0.676);
+    background: rgba(2, 1, 31, 0.13);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(40, 7, 251, 0.21) 84%, rgba(255, 0, 25, 0.093) 100%);
     padding: 10px;
 }
 
 .container-csharp {
-    background: rgba(0, 0, 0, 0.676);
+    background: rgba(2, 1, 31, 0.13);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(40, 7, 251, 0.21) 84%, rgba(255, 0, 25, 0.093) 100%);
     padding: 10px;
 }
 
