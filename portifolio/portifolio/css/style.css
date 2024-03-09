@@ -237,7 +237,7 @@ video {
 .cards {
   margin-top: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 70vh;
 }
 
@@ -257,7 +257,7 @@ video {
 }
 
 .card img {
-  width: 25rem;
+  width: 15rem;
   height: 20rem;
   border-radius: 10px;
 }
@@ -340,7 +340,111 @@ html {
   padding: 10px;
 }
 
-@-webkit-keyframes slidein {
+.acordeon ul li{
+  position: relative;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px solid #dce7eb;   
+}
+.acordeon ul li input[type="checkbox"]{
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.acordeon ul li i{
+  position: absolute;
+  transform: translate(-6px,0);
+  margin-top: 16px;
+  right: 0;
+} 
+.acordeon ul li input[type=checkbox]:checked ~ p {
+margin-top: 0;
+max-height: 0;
+opacity: 0;
+transform: translateX(-50%);
+}
+
+.acordeon ul li input[type="checkbox"]:checked~i::before{
+  transform: translate(2px,0) rotate(45deg);
+}
+.acordeon ul li input[type="checkbox"]:checked~i::after{
+  transform: translate(-2px,0) rotate(-45deg);
+}
+.acordeon ul li i::before, ul li i::after{
+  content: "";
+  position: absolute;
+  background: #333;
+  width: 3px;
+  height: 9px;
+}
+.acordeon ul li i::before{
+  transform: translate(-2px,0)rotate(45deg);
+}
+.acordeon ul li i:after {
+transform: translate(2px, 0) rotate(-45deg);
+}
+.acordeon p{
+font-size: 16px;
+color: whitesmoke;
+line-height: 26px;
+letter-spacing: 1px;
+position: relative;
+padding: 0 11px;
+max-height: 800px;
+margin-top: 14px;
+opacity: 1;
+transform: translate(0,0);
+overflow: hidden;     
+}
+.transition, p, ul li i:before, ul li i:after {
+transition: all 0.25s ease-in-out;
+
+}
+.flipIn, h1, ul li {
+animation: flipdown 0.5s ease both;
+}
+.acordeon ul li:nth-of-type(1) {
+animation-delay: 0.5s;
+}
+.acordeon ul li:nth-of-type(2) {
+animation-delay: 0.75s;
+}
+.acordeon ul li:nth-of-type(3) {
+animation-delay: 1s;
+}
+.acordeon ul li:last-of-type {
+padding-bottom: 0;
+}
+
+@keyframes flipdowns {
+0% {
+  opacity: 0;
+  transform-origin: top center;
+  transform: rotateX(-90deg);
+}
+5% {
+  opacity: 1;
+}
+80% {
+  transform: rotateX(8deg);
+}
+83% {
+  transform: rotateX(6deg);
+}
+92% {
+  transform: rotateX(-3deg);
+}
+100% {
+  transform-origin: top center;
+  transform: rotateX(0deg);
+}
+}
+
+
+@-webkit-keyframes slideins {
   0% {
     top: -400px;
     opacity: 0;
